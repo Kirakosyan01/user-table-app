@@ -1,3 +1,4 @@
+import './UsersDataTable.css';
 import { TableHead } from "../TableHead/TableHead.jsx";
 import { useState } from "react";
 import { UsersDataTableButtons } from "../UsersDataTableButtons/UsersDataTableButtons.jsx";
@@ -31,7 +32,7 @@ export function UsersDataTable(){
     }
 
     return (
-        <div>
+        <div className="data__table">
             <UsersDataTableButtons setUsers={setUsersData} setShowForm={setShowForm} showForm={showForm}/>
            {showForm && <TableHead handleSubmit={handleSubmit} />}
            <TableBody usersData={usersData} setUsersData={setUsersData}/>

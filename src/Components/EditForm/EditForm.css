@@ -1,0 +1,37 @@
+.edit_form__div{
+    width: 100%;
+}
+.edit__form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.edit_cancel__button{
+    border: none;
+    padding: 7px 15px;
+    background-color: #0a6fff;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{
+      background-color: rgb(255, 0, 0);
+      transform: scale(1.1);
+    }
+}
+.save__button{
+    border: none;
+    padding: 7px 15px;
+    background-color: #0a6fff;
+    border-radius: 4px;
+    margin-right: 6px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{
+      background-color: rgb(255, 0, 0);
+      transform: scale(1.1);
+    }
+}

@@ -1,19 +1,20 @@
+import './TableBody.css';
 import { EditForm } from "../EditForm/EditForm";
 import { TableBodyButtons } from "../TableBodyButtons/TableBodyButtons";
 
 export const TableBody = ({ usersData, setUsersData }) => {
   return (
-    <div>
+    <div className='table__body'>
       <table>
         <thead>
           <tr>
-            <td>ID</td>
-            <td>Name</td>
-            <td>City</td>
-            <td>State</td>
-            <td>Country</td>
-            <td>Company</td>
-            <td>Action</td>
+            <th>ID</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Company</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -23,7 +24,7 @@ export const TableBody = ({ usersData, setUsersData }) => {
                 <td>{usersData.indexOf(user) + 1}</td>
                 {user.isEditing ? (
                   <td colSpan={6}>
-                    <EditForm />
+                    <EditForm usersData={usersData} setUsersData={setUsersData} user={user}/>
                   </td>
                 ) : (
                   <>

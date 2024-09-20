@@ -1,0 +1,22 @@
+.table_head{
+    display: flex;
+    input{
+        border: 1px solid rgb(226, 220, 220);
+        border-radius: 4px;
+        padding: 8px;
+        margin-right: 7px;
+    }
+}
+.add__button{
+    border: none;
+    padding: 7px 15px;
+    background-color: #0a6fff;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{
+      transform: scale(1.1);
+    }
+}
